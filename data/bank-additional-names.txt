@@ -70,3 +70,28 @@
   21 - y - has the client subscribed a term deposit? (binary: "yes","no")
 
 8. Missing Attribute Values: There are several missing values in some categorical attributes, all coded with the "unknown" label. These missing values can be treated as a possible class label or using deletion or imputation techniques. 
+
+9.   Traduction 
+
+   1 - age: edad
+   2 - job : trabajo
+   3 - marital : estado civil
+   4 - education (categorical):nivel de educacion  
+   5 - default: has credit in default? (categorical): credito normal / si o no, desconocido
+   6 - housing: has housing loan?:Prestamo de vivienda / si, no, desconocido
+   7 - loan: has personal loan? (categorical):credito personal / si, no, desconocido
+   8 - contact: contact communication type (categorical:tipo de comunicacion / celular o fijo
+   9 - month: last contact month of year: ultimo contacto del mes
+  10 - day_of_week: last contact day of the week: ultimo dia de contacto
+  11 - duration: last contact duration, en segundos (numerico). Nota importante: este atributo afecta en gran medida el objetivo de salida (por ejemplo, si la duración = 0, entonces y = "no"). Sin embargo, la duración no se conoce antes de realizar una llamada. Además, después del final de la llamada, obviamente se conoce y. Por lo tanto, esta entrada solo debe incluirse con fines de referencia y debe descartarse si la intención es tener un modelo predictivo realista.
+# otros atributos:
+  12 - campaign: Número de contactos realizados durante esta campaña y para este cliente (numérico, incluye el último contacto)
+  13 - pdays: cantidad de días que pasaron después de que el cliente fue contactado por última vez desde una campaña anterior (numérico; 999 significa que el cliente no fue contactado previamente)
+  14 - previous: Número de contactos realizados antes de esta campaña y para este cliente (numérico)
+  15 - poutcome: resultado de la campaña de marketing anterior (categórico: "fracaso", "inexistente", "éxito")
+   # atributos del contexto social y económico
+  16 - emp.var.rate: tasa de variación del empleo - indicador trimestral (numérico)
+  17 - cons.price.idx: índice de precios al consumidor - indicador mensual (numérico)    
+  18 - cons.conf.idx: índice de confianza del consumidor - indicador mensual (numérico)    
+  19 - euribor3m: Euribor tasa 3 meses - indicador diario (numérico)
+  20 - nr.employed: cantidad de empleados - indicador trimestral (numérico)
